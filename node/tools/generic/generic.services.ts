@@ -33,15 +33,15 @@ export class GenericServices<TModelo> {
           });
      };
 
-     public async IncluirAsync(obj: TModelo): Promise<TModelo> {
+     public async DeletarAsync(obj: TModelo): Promise<TModelo> {
           return new Promise(async (response, reject) => {
-               if (isNullOrUndefined(obj)) reject("Nenhum objeto definido!");
-               await this.getCollection().insertOne(obj);
+               var params = obj as IModelo;
+
+               await this.getCollection().deleteOne({ _id: params._id }, (error) => {
+                    if (!isNullOrUndefined(error)) reject(error.message);
+               });
+
           });
-     };
-
-     public async ExcluirAsync() {
-
      };
 
 
