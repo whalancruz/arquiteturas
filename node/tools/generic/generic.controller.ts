@@ -12,7 +12,9 @@ export class GenericController<TModelo> {
     };
 
     public applyRoutes(koaRouter: Router) {
-
+        koaRouter.get(`/${this.api}/salvar`, (ctx) => { });
+        koaRouter.get(`/${this.api}/editar`, (ctx) => { });
+        koaRouter.get(`/${this.api}/excluir`, (ctx) => { });
     };
 
 };

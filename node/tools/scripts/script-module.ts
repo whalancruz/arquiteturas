@@ -1,8 +1,8 @@
 import fs from 'fs';
 
 
-var directory = 'escola';  // Nome do diretorio exemple: .modules/exemple
-var name = 'escolaAlunos'; // Nome do arquivos 'controller,models,services' exemple: .modules/exemple.controller.ts
+var directory = 'exemple';  // Nome do diretorio exemple: .modules/exemple
+var name = 'exempleservices'; // Nome do arquivos 'controller,models,services' exemple: .modules/exemple.controller.ts
 
 
 var dir = `./modules/${directory}`;
