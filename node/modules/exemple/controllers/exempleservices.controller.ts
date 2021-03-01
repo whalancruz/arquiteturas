@@ -17,13 +17,6 @@ export class ExempleservicesController extends GenericController<IExempleservice
 
      public applyRoutes(koaRouter: Router) {
 
-          koaRouter.get('/test', (ctx) => {
-               console.log("chegou");
-
-
-
-          });
-
 
           super.applyRoutes(koaRouter);
      };
