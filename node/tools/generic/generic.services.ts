@@ -13,10 +13,7 @@ export class GenericServices<TModelo> {
 
      constructor() { };
 
-
-     public getCollection(): mongoose.Collection { return mongoDB.getCollection(this.api); };
-
-
+     //#region CRUD
 
      public async AlterarAsync(obj: TModelo): Promise<TModelo> {
           return new Promise(async (response, reject) => {
@@ -44,5 +41,12 @@ export class GenericServices<TModelo> {
           });
      };
 
+     //#endregion
+
+     //#region SEVERAL
+
+     public getCollection(): mongoose.Collection { return mongoDB.getCollection(this.api); };
+
+     //#endregion
 
 };
