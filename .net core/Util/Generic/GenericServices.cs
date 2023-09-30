@@ -8,15 +8,20 @@ namespace Util.Generic
     public class GenericServices<TEntity> : IGenericServices<TEntity> where TEntity : BaseEntity
     {
 
-        private readonly DbContexto _dbContexto;
+        public DbContexto _dbContexto;
 
         public GenericServices(DbContexto dbContexto)
         {
             _dbContexto = dbContexto;
         }
 
+        public DbContexto DbContexto() => _dbContexto;
+        public IQueryable<TEntity> DbQueryable() => _dbContexto.Set<TEntity>().Where(x => x.RemoveAt == null);
+
         public async Task<TEntity> AddAsync(TEntity entity)
         {
+            entity = this.onPrevInsert(entity);
+
             _dbContexto.Set<TEntity>().Add(entity);
             await _dbContexto.SaveChangesAsync();
             return entity;
@@ -64,6 +69,7 @@ namespace Util.Generic
         }
 
         public virtual TEntity onPrevUpdate(TEntity entity) { return entity; }
+        public virtual TEntity onPrevInsert(TEntity entity) { return entity; }
 
     }
 }

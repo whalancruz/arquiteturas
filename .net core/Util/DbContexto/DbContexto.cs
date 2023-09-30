@@ -12,7 +12,8 @@ public class DbContexto : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfiguration(new TesteConfiguration());
+        modelBuilder.ApplyConfiguration(new UsersConfiguration());
+        modelBuilder.ApplyConfiguration(new EnvironmentsConfiguration());
         base.OnModelCreating(modelBuilder);
     }
 
@@ -23,6 +24,7 @@ public class DbContexto : DbContext
             optionsBuilder.UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
         }
     }
+    
+    public DbSet<UsersEntity> Users { get; set; }
 
-    public DbSet<TesteEntity> Teste { get; set; }
 }

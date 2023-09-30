@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\whala\\Documents\\.net\\.net.csproj": {}
+    "c:\\Users\\whala\\OneDrive\\Documentos\\Pessoal\\arquiteturas\\.net core\\.net.csproj": {}
   },
   "projects": {
-    "C:\\Users\\whala\\Documents\\.net\\.net.csproj": {
+    "c:\\Users\\whala\\OneDrive\\Documentos\\Pessoal\\arquiteturas\\.net core\\.net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\whala\\Documents\\.net\\.net.csproj",
+        "projectUniqueName": "c:\\Users\\whala\\OneDrive\\Documentos\\Pessoal\\arquiteturas\\.net core\\.net.csproj",
         "projectName": ".net",
-        "projectPath": "C:\\Users\\whala\\Documents\\.net\\.net.csproj",
+        "projectPath": "c:\\Users\\whala\\OneDrive\\Documentos\\Pessoal\\arquiteturas\\.net core\\.net.csproj",
         "packagesPath": "C:\\Users\\whala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\whala\\Documents\\.net\\obj\\",
+        "outputPath": "c:\\Users\\whala\\OneDrive\\Documentos\\Pessoal\\arquiteturas\\.net core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\whala\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "c:\\Users\\whala\\OneDrive\\Documentos\\Pessoal\\arquiteturas\\.net core\\NuGet.Config",
+          "C:\\Users\\whala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\offline-cache": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,15 +43,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -62,6 +68,14 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -83,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,7 +10,9 @@ namespace Util.Ninject
         public override void Load()
         {
             Bind<IConfiguration>().ToConstant(new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build());
-            Bind<ITesteServices>().To<TesteServices>();
+            Bind<IUsersServices>().To<UsersServices>();
+            Bind<IAuthorizationServices>().To<AuthorizationServices>();
+            Bind<ICriptografiaServices>().To<CriptografiaServices>();
         }
     }
 

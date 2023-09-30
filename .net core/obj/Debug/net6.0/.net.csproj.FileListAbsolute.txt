@@ -1,0 +1,9 @@
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.csproj.AssemblyReference.cache
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.AssemblyInfoInputs.cache
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.AssemblyInfo.cs
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.csproj.CoreCompileInputs.cache
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.RazorAssemblyInfo.cache
+C:\Users\whala\OneDrive\Documentos\Pessoal\React\plantmanager\back-end\obj\Debug\net6.0\.net.RazorAssemblyInfo.cs

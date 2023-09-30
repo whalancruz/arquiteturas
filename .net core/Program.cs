@@ -1,7 +1,5 @@
 
-using Ninject;
-
-namespace MeuProjeto
+namespace Plantmanager
 {
     public class Program
     {
@@ -14,7 +12,7 @@ namespace MeuProjeto
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Plantmanager.Startup>();
                 });
     }
 }

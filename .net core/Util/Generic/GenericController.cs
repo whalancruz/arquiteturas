@@ -1,4 +1,5 @@
 using Interfaces.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace uteis
@@ -14,6 +15,7 @@ namespace uteis
         }
 
         [HttpGet]
+        [Authorize] 
         public async Task<ActionResult> Get()
         {
             var entities = await _service.GetAllAsync();
@@ -21,6 +23,7 @@ namespace uteis
         }
 
         [HttpGet("{id}")]
+        [Authorize] 
         public async Task<ActionResult> GetID(long id)
         {
             var entity = await _service.GetByIdAsync(id);
@@ -28,6 +31,7 @@ namespace uteis
         }
 
         [HttpPost]
+        [Authorize] 
         public async Task<ActionResult> Post([FromBody] TEntity query)
         {
             await _service.AddAsync(query);
@@ -35,6 +39,7 @@ namespace uteis
         }
 
         [HttpPut("{Id}")]
+        [Authorize] 
         public async Task<ActionResult> Put(long id, [FromBody] TEntity query)
         {
             await _service.UpdateAsync(id, query);
@@ -42,6 +47,7 @@ namespace uteis
         }
 
         [HttpDelete("{id}")]
+        [Authorize] 
         public async Task<ActionResult> Delete(long id)
         {
             var entity = await _service.GetByIdAsync(id);
